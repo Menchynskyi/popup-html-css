@@ -1,0 +1,48 @@
+body {
+    font-size: 16px;
+    line-height: 1.2em;
+    font-family: Arial, serif;
+    color: black;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 10px;
+}
+
+.header-inner {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;  
+    flex-direction: row;    
+}
+
+.button {
+    margin: 12px;
+}
+
+a {
+    vertical-align: -50%;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+  }
+    
+a:hover, a:active {
+    text-decoration: underline;
+    color: grey;
+  }
+
+.avatar {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.popup {
+    vertical-align: -75%;
+    width: 1.3em;
+}
