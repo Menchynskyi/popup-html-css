@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     line-height: 1.2em;
-    font-family: Arial, serif;
+    font-family: 'Arial', sans-serif;
     color: black;
 }
 
@@ -18,7 +18,7 @@ body {
     flex-direction: row;    
 }
 
-.button {
+.header-inner-el {
     margin: 12px;
 }
 
@@ -41,8 +41,22 @@ a:hover, a:active {
     width: 2.5em;
     height: 2.5em;
 }
+.avatar:hover {
+    cursor: pointer;
+}
 
 .popup {
     vertical-align: -75%;
     width: 1.3em;
+    opacity: .50;
+}
+
+.popup:hover {
+    opacity: 100;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.popup-box {
+    z-index: 1;
 }
