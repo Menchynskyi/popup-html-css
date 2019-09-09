@@ -1,3 +1,5 @@
+
+
 body {
     font-size: 16px;
     line-height: 1.2em;
@@ -7,7 +9,6 @@ body {
 
 .header {
     width: 100%;
-    border-bottom: 1px solid lightgrey;
     margin-top: 10px;
 }
 
@@ -19,19 +20,19 @@ body {
 }
 
 .header-inner-el {
-    margin: 12px;
+    margin: 10px;
 }
 
-a {
+a.links {
     vertical-align: -50%;
 }
 
-a:link, a:visited {
+a.links:link, a.links:visited {
     text-decoration: none;
     color: black;
   }
     
-a:hover, a:active {
+a.links:hover, a.links:active {
     text-decoration: underline;
     color: grey;
   }
@@ -45,18 +46,45 @@ a:hover, a:active {
     cursor: pointer;
 }
 
-.popup {
+.popup-button {
     vertical-align: -75%;
     width: 1.3em;
     opacity: .50;
 }
 
-.popup:hover {
+.popup-button:hover {
     opacity: 100;
     transition: 0.2s;
     cursor: pointer;
 }
 
 .popup-box {
-    z-index: 1;
+    position: absolute;
+    z-index: 999;
+    width: 0;
+	height: 0;
+    opacity: 0;
+    border: 1px solid #ccc;
+    border-color: rgba(0,0,0,.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 80px;
 }
+
+.popup-box:target {
+    position: absolute;
+    z-index: 999;
+    width: 300px;
+	height: 200px;
+    opacity: 1;
+    -webkit-transition:  opacity 1s ease;
+	transition: opacity 1s ease;
+}
+
+
+
+
+
