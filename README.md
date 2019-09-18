@@ -1,4 +1,4 @@
-## Css popup
+## Css Popup
 
 [demo](https://menchynskyi.github.io/popup-html-css/)
 
@@ -6,5 +6,3 @@
 * no JavaScript, only HTML/CSS, use of preprocessors is allowed
 * no external libraries or frameworks
 * browser support: Chrome only (feel free to use latest features)
-
-
