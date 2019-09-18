@@ -1,0 +1,242 @@
+html,
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.nav-element {
+    margin: 0px 10px 0px 5px;
+}
+
+.nav-element:hover {
+    text-decoration: underline;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #111;
+    font-size: 1em;
+}
+
+.nav-link:hover {
+    opacity: 0.6;
+}
+
+.text {
+    text-transform: capitalize;
+}
+
+.popup-icon {
+    width: 22px;
+    height: 22px;
+    margin: 0 5px;
+}
+
+.icon {
+    width: 38px;
+    height: 38px;
+}
+
+.icon img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.popup-check {
+    position: absolute;
+    right: 59px;
+    top: 3px;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.angle-shadow,
+.angle {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    right: 77px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.angle-shadow {
+    top: 49px;
+    border-bottom: 10px solid rgb(155, 155, 155);
+}
+
+.angle {
+    top: 50px;
+    border-bottom: 10px solid white;
+    z-index: 1;
+}
+
+.popup-check:checked,
+.popup-check:checked~.popup {
+    display: block;
+}
+
+.popup-check:checked~.angle,
+.popup-check:checked~.angle-shadow {
+    opacity: 1;
+}
+
+.popup-list-element {
+    list-style: none;
+}
+
+.popup {
+    width: 290px;
+    height: 482px;
+    border: #ccc solid 1px;
+    border-radius: 2px;
+    position: absolute;
+    top: 58px;
+    right: 10px;
+    display: none;
+    overflow-x: none; 
+    overflow-y: auto;
+    box-shadow: 0px 0px 3px 1px #ccc;
+}
+
+.popup-list,
+.more-ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.popup-list-element {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+    width: 65px;
+    margin: 10px 0px 0px 10px;
+    border: 1px solid transparent;
+}
+
+.popup-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    color: #222;
+}
+
+.popup-link {
+    border: 1px solid transparent;
+}
+
+.popup-link:hover {
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+
+.popup-link:focus {
+    border: 1px solid rgb(47, 130, 185);
+    border-radius: 1px;
+}
+
+.element-content {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 8px;
+}
+
+.element-content img {
+    padding: 3px 0;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.element-content-text,
+.element-content-text:hover  {
+    text-decoration: none;
+}
+
+.more-checkbox,
+.more-text {
+    position: absolute;
+    top: 432px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.more-checkbox {
+    opacity: 0;
+}
+
+.more-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+    text-decoration: none;
+    color: #444;
+    z-index: -1;
+}
+
+.more-ul {
+    display: none;
+}
+
+.more-checkbox:checked~.more-ul {
+    display: flex;
+}
+
+.more-checkbox:checked~.more-text,
+.more-checkbox:checked~.text,
+.more-checkbox:checked {
+    position: absolute;
+    top: -50px;
+}
+
+.text {
+    text-decoration: none;
+}
+
+.other-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 40px;
+    margin: 15px 0 5px 0;
+}
+
+.other-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.other-link:hover {
+    text-decoration: underline;
+}

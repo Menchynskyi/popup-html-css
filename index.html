@@ -1,79 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Popup</title>
-    <link rel="stylesheet" href="css/main.css">
-    
 </head>
+
 <body>
-    <header class="header">
-        <div class="header-inner">
-            <div class="header-inner-el"> 
-                <a class="links" href="#!">Mail</a>
+    <div class="header">
+        <nav class="nav">
+            <div class="nav-element text">
+                <a href="#!" class="nav-link">mail</a>
             </div>
-            <div class="header-inner-el">
-                <a class="links" href="#!">Images</a>
+            <div class="nav-element text">
+                <a href="#!" class="nav-link">images</a>
             </div>
-            <div class="header-inner-el">
-                <a href="#popup1">
-                    <img class="popup-button" src="img/popup.svg" alt="popup-button">
+            <div class="nav-element">
+                <div class="popup-icon">
+                    <img src="img/popup.svg" class="lol" alt="popup">
+                </div>
+            </div>
+
+            <!-- popup -->
+
+            <input type="checkbox" class="nav-element popup-check" name="popup-icon" />
+            <label for="popup-icon" class="pop-label"></label>
+            <div class="angle"></div>
+            <div class="angle-shadow"></div>
+            <div class="popup">
+                <ul class="popup-list">
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/1.jpg" alt="Audrey">
+                            </div>
+                            <div class="element-content-text">Audrey</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                    <img src="img/2.jpg" alt="Danny">
+                            </div>
+                            <div class="element-content-text">Danny</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/3.jpg" alt="Elev">
+                            </div>    
+                            <div class="element-content-text">Elev</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/4.jpg" alt="Leo">
+                            </div>
+                            <div class="element-content-text">Leo</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/5.png" alt="Gosling">
+                            </div>
+                            <div class="element-content-text">Gosling</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/6.jpg" alt="Lynch">
+                            </div>
+                            <div class="element-content-text">Lynch</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/7.png" alt="Coop">
+                            </div>
+                            <div class="element-content-text">Coop</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/8.jpg" alt="Pit">
+                            </div>
+                            <div class="element-content-text">Pit</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/9.jpg" alt="Hepburn">
+                            </div>
+                            <div class="element-content-text">Hepburn</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/10.jpg" alt="Jake">
+                            </div>
+                            <div class="element-content-text">Jake</div>
+                        </a>
+                    </li>
+                </ul>
+
+                <input type="checkbox" class="more-checkbox" id="more" name="more" />
+                <label for="more" class="more-pop"></label>
+                <a href="#other" class="more-text">
+                    <span class="text">
+                        More
+                    </span>
+                </a>
+                <ul class="more-ul">
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/11.jpg" alt="Luss">
+                            </div>
+                            <div class="element-content-text">Luss</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/12.jpg" alt="Benicio">
+                            </div>
+                            <div class="element-content-text">Benicio</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/13.jpg" alt="Fanning">
+                            </div>
+                            <div class="element-content-text">Fanning</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/14.jpg" alt="Kendall">
+                            </div>
+                            <div class="element-content-text">Kendall</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/15.png" alt="Mary">
+                            </div>
+                            <div class="element-content-text">Mary</div>
+                        </a>
+                    </li>
+                    <li class="popup-list-element">
+                        <a href="#!" class="popup-link">
+                            <div class="element-content">
+                                <img src="img/16.png" alt="Depp">
+                            </div>
+                            <div class="element-content-text">Depp</div>
+                        </a>
+                    </li>
+                    <li class="other-bottom">
+                        <a href="#!" class="other-link" name="other">More actors</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--  -->
+
+            <div class="nav-element icon">
+                <a href="#!">
+                    <img src="img/avatar.jpg" alt="avatar">
                 </a>
             </div>
-            <div class="header-inner-el">
-                <a class="links" href="#!">
-                    <img class="avatar" src="img/avatar.jpg" alt="avatar">
-                </a>
-            </div>
-        </div>
-                
-            <div id="popup1" class="popup-box">
-                    <div class="popup-box-el">
-                        <img src="img/1.jpg" alt="audrey">
-                        <p>Audrey</p>
-                    </div>
-                    <div class="popup-box-el">
-                        <img src="img/2.jpg" alt="danny">
-                        <p>Danny</p>
-                    </div>
-                    <div class="popup-box-el">
-                        <img src="img/3.jpg" alt="elev">
-                        <p>Elev</p>
-                    </div>
-                    <div class="popup-box-el">
-                        <img src="img/4.jpg" alt="leo">
-                        <p>Leo</p>
-                    </div>
-                    <div class="popup-box-el">
-                        <img src="img/5.png" alt="gosl">
-                        <p>Gosling</p>
-                    </div>
-                    <div class="popup-box-el">
-                        <img src="img/6.jpg" alt="lynch">
-                        <p>Lynch</p>
-                    </div>
-                    <div class="popup-box-el">
-                        <img src="img/7.png" alt="coop">
-                        <p>Cooper</p>
-                    </div>
-                    <div class="popup-box-el">
-                        <img src="img/8.jpg" alt="pitt">
-                        <p>Pitt</p>
-                    </div>
-
-                    <button>More</button>
-                    
-                
-            </div>
-        
-       
-    </header>
-
-    
+        </nav>
+    </div>
 </body>
-
-    
 
 </html>
