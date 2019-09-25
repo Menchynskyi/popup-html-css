@@ -172,7 +172,7 @@ body {
 .element-content img {
     padding: 3px 0;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 15%;
 }
 
 .element-content-text,
